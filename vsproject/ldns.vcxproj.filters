@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\ldns">
+      <UniqueIdentifier>{a6274a9e-87e0-4bd3-9eba-77e4ed3b4232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\compat">
+      <UniqueIdentifier>{a49799f9-705a-4c4d-a6c2-b3032b976201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\compat">
+      <UniqueIdentifier>{c78c3141-6cd8-45c5-9d1f-b4204c0c578d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\compat\sys">
+      <UniqueIdentifier>{c0d91af2-7c56-4eb5-9b51-b6754ed12df0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\buffer.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dane.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dname.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dnssec.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dnssec_sign.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dnssec_verify.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\dnssec_zone.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\duration.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\error.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\higher.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\host2str.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\host2wire.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\keys.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\ldns.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\packet.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\parse.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\radix.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\rbtree.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\rdata.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\resolver.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\rr.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\rr_functions.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\sha1.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\sha2.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\str2host.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\tsig.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\update.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\wire2host.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\zone.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\common.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\config.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\net.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ldns\util.h">
+      <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat\gettimeofday.h">
+      <Filter>头文件\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat\strings.h">
+      <Filter>头文件\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat\unistd.h">
+      <Filter>头文件\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat\sys\socket.h">
+      <Filter>头文件\compat\sys</Filter>
+    </ClInclude>
+    <ClInclude Include="..\compat\sys\time.h">
+      <Filter>头文件\compat\sys</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\buffer.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dane.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dname.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dnssec.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dnssec_sign.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dnssec_verify.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dnssec_zone.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\duration.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\error.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\higher.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\host2str.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\host2wire.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\keys.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\linktest.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\packet.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\parse.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\radix.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rbtree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rdata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\resolver.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rr.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\rr_functions.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sha1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sha2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\str2host.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tsig.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\update.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\wire2host.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\zone.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\gmtime_r.c">
+      <Filter>源文件\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\localtime_r.c">
+      <Filter>源文件\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\strlcpy.c">
+      <Filter>源文件\compat</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

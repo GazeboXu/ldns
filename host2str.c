@@ -2003,6 +2003,7 @@ ldns_ed448_key2buffer_str(ldns_buffer *output, EVP_PKEY *p)
 }
 #endif
 
+#ifdef HAVE_SSL
 /** print one b64 encoded bignum to a line in the keybuffer */
 static int
 ldns_print_bignum_b64_line(ldns_buffer* output, const char* label, const BIGNUM* num)
@@ -2032,6 +2033,7 @@ ldns_print_bignum_b64_line(ldns_buffer* output, const char* label, const BIGNUM*
 	LDNS_FREE(bignumbuf);
 	return 1;
 }
+#endif
 
 ldns_status
 ldns_key2buffer_str(ldns_buffer *output, const ldns_key *k)

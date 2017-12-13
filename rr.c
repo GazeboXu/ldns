@@ -708,7 +708,7 @@ ldns_rr_new_frm_fp_l(ldns_rr **newrr, FILE *fp, uint32_t *default_ttl, ldns_rdf 
 {
 	char *line;
 	const char *endptr;  /* unused */
-	ldns_rr *rr;
+	ldns_rr *rr = NULL;
 	uint32_t ttl;
 	ldns_rdf *tmp;
 	ldns_status s;

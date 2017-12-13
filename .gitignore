@@ -237,3 +237,8 @@
 /wire2host.o
 /zone.lo
 /zone.o
+
+*.user
+Debug/
+Release/
+.vs

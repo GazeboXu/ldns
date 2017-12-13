@@ -5,7 +5,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Define to 1 if you have the <arpa/inet.h> header file. */
-#define HAVE_ARPA_INET_H 1
+//#define HAVE_ARPA_INET_H 1
 
 /* Whether the C compiler accepts the "format" attribute */
 #define HAVE_ATTR_FORMAT 1
@@ -75,10 +75,10 @@
 /* #undef HAVE_ECDSA_SIG_GET0 */
 
 /* Define to 1 if you have the `endprotoent' function. */
-#define HAVE_ENDPROTOENT 1
+//#define HAVE_ENDPROTOENT 1
 
 /* Define to 1 if you have the `endservent' function. */
-#define HAVE_ENDSERVENT 1
+//#define HAVE_ENDSERVENT 1
 
 /* Define to 1 if you have the `ENGINE_load_cryptodev' function. */
 /* #undef HAVE_ENGINE_LOAD_CRYPTODEV */
@@ -105,7 +105,7 @@
 /* #undef HAVE_EVP_SHA512 */
 
 /* Define to 1 if you have the `fcntl' function. */
-#define HAVE_FCNTL 1
+//#define HAVE_FCNTL 1
 
 /* Define to 1 if you have the `fork' function. */
 #define HAVE_FORK 1
@@ -117,7 +117,7 @@
 #define HAVE_GETOPT_H 1
 
 /* Define to 1 if you have the `gmtime_r' function. */
-#define HAVE_GMTIME_R 1
+//#define HAVE_GMTIME_R 1
 
 /* If you have HMAC_Update */
 /* #undef HAVE_HMAC_UPDATE */
@@ -135,7 +135,7 @@
 #define HAVE_INTTYPES_H 1
 
 /* if the function 'ioctlsocket' is available */
-/* #undef HAVE_IOCTLSOCKET */
+#define HAVE_IOCTLSOCKET 1
 
 /* Define to 1 if you have the `isascii' function. */
 #define HAVE_ISASCII 1
@@ -150,7 +150,7 @@
 /* #undef HAVE_LIBRESSL */
 
 /* Define to 1 if you have the `localtime_r' function. */
-#define HAVE_LOCALTIME_R 1
+//#define HAVE_LOCALTIME_R 1
 
 /* Define to 1 if your system has a GNU libc compatible `malloc' function, and
    to 0 otherwise. */
@@ -166,7 +166,7 @@
 #define HAVE_MEMSET 1
 
 /* Define to 1 if you have the <netdb.h> header file. */
-#define HAVE_NETDB_H 1
+//#define HAVE_NETDB_H 1
 
 /* Define to 1 if you have the <netinet/if_ether.h> header file. */
 /* #undef HAVE_NETINET_IF_ETHER_H */
@@ -175,7 +175,7 @@
 /* #undef HAVE_NETINET_IGMP_H */
 
 /* Define to 1 if you have the <netinet/in.h> header file. */
-#define HAVE_NETINET_IN_H 1
+//#define HAVE_NETINET_IN_H 1
 
 /* Define to 1 if you have the <netinet/in_systm.h> header file. */
 /* #undef HAVE_NETINET_IN_SYSTM_H */
@@ -211,7 +211,7 @@
 /* #undef HAVE_PCAP_H */
 
 /* This platform supports poll(7). */
-#define HAVE_POLL 1
+//#define HAVE_POLL 1
 
 /* If available, contains the Python version number currently in use. */
 /* #undef HAVE_PYTHON */
@@ -224,7 +224,7 @@
 #define HAVE_REALLOC 1
 
 /* Define to 1 if you have the `sleep' function. */
-#define HAVE_SLEEP 1
+//#define HAVE_SLEEP 1
 
 /* Define to 1 if you have the `snprintf' function. */
 #define HAVE_SNPRINTF 1
@@ -251,7 +251,7 @@
 #define HAVE_STRING_H 1
 
 /* Define to 1 if you have the `strlcpy' function. */
-#define HAVE_STRLCPY 1
+//#define HAVE_STRLCPY 1
 
 /* Define to 1 if you have the `strtoul' function. */
 #define HAVE_STRTOUL 1
@@ -263,10 +263,10 @@
 #define HAVE_SYS_MOUNT_H 1
 
 /* Define to 1 if you have the <sys/param.h> header file. */
-#define HAVE_SYS_PARAM_H 1
+//#define HAVE_SYS_PARAM_H 1
 
 /* define if you have sys/socket.h */
-#define HAVE_SYS_SOCKET_H 1
+//#define HAVE_SYS_SOCKET_H 1
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 #define HAVE_SYS_STAT_H 1
@@ -290,7 +290,7 @@
 /* #undef HAVE_VFORK_H */
 
 /* Define to 1 if you have the <winsock2.h> header file. */
-/* #undef HAVE_WINSOCK2_H */
+#define HAVE_WINSOCK2_H 1
 
 /* Define to 1 if `fork' works. */
 #define HAVE_WORKING_FORK 1
@@ -299,7 +299,7 @@
 #define HAVE_WORKING_VFORK 1
 
 /* Define to 1 if you have the <ws2tcpip.h> header file. */
-/* #undef HAVE_WS2TCPIP_H */
+#define HAVE_WS2TCPIP_H 1
 
 /* Define to 1 if the system has the type `_Bool'. */
 #define HAVE__BOOL 1
@@ -411,7 +411,7 @@
 
 
 /* Whether the windows socket API is used */
-/* #undef USE_WINSOCK */
+#define USE_WINSOCK 1
 
 /* the version of the windows API enabled */
 #define WINVER 0x0502
@@ -490,7 +490,7 @@
 /* #undef ss_family */
 
 /* Define to `int' if <sys/types.h> does not define. */
-/* #undef ssize_t */
+typedef int ssize_t;
 
 /* Define to `unsigned short' if <sys/types.h> does not define. */
 /* #undef uint16_t */
@@ -552,12 +552,33 @@
 
 #ifdef HAVE_WINSOCK2_H
 #include <winsock2.h>
+typedef UINT	in_addr_t;
+typedef USHORT	in_port_t;
 #endif
 
 #ifdef HAVE_WS2TCPIP_H
 #include <ws2tcpip.h>
 #endif
 
+#ifndef HAVE_GETTIMEOFDAY
+#include "gettimeofday.h"
+#endif
+
+#if defined(_MSC_VER)
+#define snprintf	_snprintf
+#define vsnprintf	_vsnprintf
+#define strcasecmp	_stricmp
+#define strncasecmp	_strnicmp
+#define strdup		_strdup
+/*
+#define gmtime gmtime_s
+#define ctime ctime_s
+#define strcpy strcpu_s
+*/
+#define putenv		_putenv
+#define srandom		srand
+#define random		rand
+#endif
 
 /* detect if we need to cast to unsigned int for FD_SET to avoid warnings */
 #ifdef HAVE_WINSOCK2_H
