@@ -57,7 +57,7 @@
 /* #undef HAVE_DECL_NID_X9_62_PRIME256V1 */
 
 /* Define to 1 if you have the <dlfcn.h> header file. */
-#define HAVE_DLFCN_H 1
+//#define HAVE_DLFCN_H 1
 
 /* Define to 1 if you have the `DSA_get0_key' function. */
 /* #undef HAVE_DSA_GET0_KEY */
