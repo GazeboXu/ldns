@@ -11,7 +11,9 @@
 
 #include <ldns/ldns.h>
 
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 #include <limits.h>
 
 #include <errno.h>

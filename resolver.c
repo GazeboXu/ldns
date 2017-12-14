@@ -13,7 +13,9 @@
 #include <ldns/config.h>
 
 #include <ldns/ldns.h>
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 
 /* Access function for reading
  * and setting the different Resolver

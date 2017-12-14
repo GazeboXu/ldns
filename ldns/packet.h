@@ -35,7 +35,9 @@
 #include <ldns/error.h>
 #include <ldns/common.h>
 #include <ldns/rr.h>
+#if !defined(_MSC_VER)
 #include <sys/time.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {

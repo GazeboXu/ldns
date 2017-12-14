@@ -17,13 +17,7 @@
       <UniqueIdentifier>{a6274a9e-87e0-4bd3-9eba-77e4ed3b4232}</UniqueIdentifier>
     </Filter>
     <Filter Include="源文件\compat">
-      <UniqueIdentifier>{a49799f9-705a-4c4d-a6c2-b3032b976201}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\compat">
-      <UniqueIdentifier>{c78c3141-6cd8-45c5-9d1f-b4204c0c578d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="头文件\compat\sys">
-      <UniqueIdentifier>{c0d91af2-7c56-4eb5-9b51-b6754ed12df0}</UniqueIdentifier>
+      <UniqueIdentifier>{cbcd0522-2d4d-4416-b2d3-4bec5269c792}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -132,21 +126,6 @@
     <ClInclude Include="..\ldns\util.h">
       <Filter>头文件\ldns</Filter>
     </ClInclude>
-    <ClInclude Include="..\compat\gettimeofday.h">
-      <Filter>头文件\compat</Filter>
-    </ClInclude>
-    <ClInclude Include="..\compat\strings.h">
-      <Filter>头文件\compat</Filter>
-    </ClInclude>
-    <ClInclude Include="..\compat\unistd.h">
-      <Filter>头文件\compat</Filter>
-    </ClInclude>
-    <ClInclude Include="..\compat\sys\socket.h">
-      <Filter>头文件\compat\sys</Filter>
-    </ClInclude>
-    <ClInclude Include="..\compat\sys\time.h">
-      <Filter>头文件\compat\sys</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -245,13 +224,16 @@
     <ClCompile Include="..\zone.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\compat\b64_ntop.c">
+      <Filter>源文件\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\compat\b64_pton.c">
+      <Filter>源文件\compat</Filter>
+    </ClCompile>
     <ClCompile Include="..\compat\gmtime_r.c">
       <Filter>源文件\compat</Filter>
     </ClCompile>
     <ClCompile Include="..\compat\localtime_r.c">
-      <Filter>源文件\compat</Filter>
-    </ClCompile>
-    <ClCompile Include="..\compat\strlcpy.c">
       <Filter>源文件\compat</Filter>
     </ClCompile>
   </ItemGroup>

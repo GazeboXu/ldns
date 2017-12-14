@@ -11,7 +11,9 @@
 
 #include <ldns/ldns.h>
 
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 
 #ifdef HAVE_SSL
 #include <openssl/hmac.h>

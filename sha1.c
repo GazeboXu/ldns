@@ -18,7 +18,9 @@
 
 #include <ldns/config.h>
 #include <ldns/ldns.h>
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 
 #define SHA1HANDSOFF 1 /* Copies data before messing with it. */
 #define rol(value, bits) (((value) << (bits)) | ((value) >> (32 - (bits))))

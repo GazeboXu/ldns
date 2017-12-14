@@ -2,7 +2,9 @@
 
 #include <ldns/ldns.h>
 
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 #include <time.h>
 
 #ifdef HAVE_SSL

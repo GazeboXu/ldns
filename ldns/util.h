@@ -15,7 +15,9 @@
 
 #include <inttypes.h>
 #include <sys/types.h>
+#if defined(HAVE_UNISTD_H)
 #include <unistd.h>
+#endif
 #include <ldns/common.h>
 #include <time.h>
 #include <stdio.h>

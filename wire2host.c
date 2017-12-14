@@ -19,7 +19,9 @@
 #include <ldns/ldns.h>
 /*#include <ldns/wire2host.h>*/
 
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 #include <limits.h>
 
 

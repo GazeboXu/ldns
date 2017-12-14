@@ -75,4 +75,5 @@ typedef bool _Bool;
 typedef int socklen_t;
 #endif
 
+typedef int ssize_t;
 #endif /* LDNS_COMMON_H */

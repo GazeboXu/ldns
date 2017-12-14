@@ -14,7 +14,14 @@
 #define LDNS_NET_H
 
 #include <ldns/ldns.h>
+#if defined(_MSC_VER)
+#include <Winsock2.h>
+#include <WS2tcpip.h>
+typedef UINT	in_addr_t;
+typedef USHORT	in_port_t;
+#else
 #include <sys/socket.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {

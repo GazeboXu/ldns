@@ -13,7 +13,9 @@
 #include <ldns/ldns.h>
 #include <ldns/dane.h>
 
+#if defined(HAVE_UNISTD_H)
 #include <unistd.h>
+#endif
 #include <stdlib.h>
 #include <sys/types.h>
 #ifdef HAVE_SYS_SOCKET_H

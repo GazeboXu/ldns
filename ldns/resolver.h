@@ -26,7 +26,9 @@
 #include <ldns/tsig.h>
 #include <ldns/rdata.h>
 #include <ldns/packet.h>
+#if !defined(_MSC_VER)
 #include <sys/time.h>
+#endif
 
 #ifdef __cplusplus
 extern "C" {

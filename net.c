@@ -27,7 +27,9 @@
 #ifdef HAVE_ARPA_INET_H
 #include <arpa/inet.h>
 #endif
+#if !defined(_MSC_VER)
 #include <sys/time.h>
+#endif
 #include <errno.h>
 #include <fcntl.h>
 #ifdef HAVE_POLL

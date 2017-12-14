@@ -11,7 +11,9 @@
 #include <ldns/ldns.h>
 
 #include <limits.h>
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 
 ldns_lookup_table ldns_directive_types[] = {
         { LDNS_DIR_TTL, "$TTL" },

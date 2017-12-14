@@ -15,10 +15,14 @@
 #include <ldns/rdata.h>
 #include <ldns/rr.h>
 #include <ldns/util.h>
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 #include <stdlib.h>
 #include <stdio.h>
+#if !defined(_MSC_VER)
 #include <sys/time.h>
+#endif
 #include <time.h>
 #include <ctype.h>
 

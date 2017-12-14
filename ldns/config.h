@@ -245,7 +245,7 @@
 #define HAVE_STDLIB_H 1
 
 /* Define to 1 if you have the <strings.h> header file. */
-#define HAVE_STRINGS_H 1
+//#define HAVE_STRINGS_H 1
 
 /* Define to 1 if you have the <string.h> header file. */
 #define HAVE_STRING_H 1
@@ -281,7 +281,7 @@
 #define HAVE_TIME_H 1
 
 /* define if you have unistd.h */
-#define HAVE_UNISTD_H 1
+//#define HAVE_UNISTD_H 1
 
 /* Define to 1 if you have the `vfork' function. */
 #define HAVE_VFORK 1
@@ -510,7 +510,9 @@ typedef int ssize_t;
 
 #include <stdio.h>
 #include <string.h>
+#if defined(HAVE_UNISTD_H)
 #include <unistd.h>
+#endif
 #include <assert.h>
 
 #ifndef LITTLE_ENDIAN
@@ -561,7 +563,7 @@ typedef USHORT	in_port_t;
 #endif
 
 #ifndef HAVE_GETTIMEOFDAY
-#include "gettimeofday.h"
+int gettimeofday(struct timeval *tv, struct timezone *tz);
 #endif
 
 #if defined(_MSC_VER)
@@ -576,8 +578,8 @@ typedef USHORT	in_port_t;
 #define strcpy strcpu_s
 */
 #define putenv		_putenv
-#define srandom		srand
-#define random		rand
+#define srandom(x)	srand(x)
+#define random()	rand()
 #endif
 
 /* detect if we need to cast to unsigned int for FD_SET to avoid warnings */

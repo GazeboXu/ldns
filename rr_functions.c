@@ -18,7 +18,9 @@
 #include <ldns/ldns.h>
 
 #include <limits.h>
+#if defined(HAVE_STRINGS_H)
 #include <strings.h>
+#endif
 
 /**
  * return a specific rdf
