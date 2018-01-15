@@ -117,14 +117,14 @@
     <ClInclude Include="..\ldns\common.h">
       <Filter>头文件\ldns</Filter>
     </ClInclude>
-    <ClInclude Include="..\ldns\config.h">
-      <Filter>头文件\ldns</Filter>
-    </ClInclude>
     <ClInclude Include="..\ldns\net.h">
       <Filter>头文件\ldns</Filter>
     </ClInclude>
     <ClInclude Include="..\ldns\util.h">
       <Filter>头文件\ldns</Filter>
+    </ClInclude>
+    <ClInclude Include="ldns\config.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
