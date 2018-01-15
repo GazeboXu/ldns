@@ -243,3 +243,5 @@ Debug/
 Release/
 .vs
 .vscode
+.DS_Store
+xcuserdata
